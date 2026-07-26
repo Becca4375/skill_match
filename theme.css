@@ -25,6 +25,16 @@ body.light-theme .theme-toggle {
   color: var(--text);
 }
 
+body.dark-theme nav {
+  background: var(--surface);
+}
+
+body.dark-theme nav a,
+body.dark-theme .nav-toggle,
+body.dark-theme .theme-toggle {
+  color: var(--text);
+}
+
 body.light-theme .site-footer {
   color: #dbeafe;
   background: #102d59;
