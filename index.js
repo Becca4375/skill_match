@@ -1,21 +1,10 @@
-/* ============================================================
-   Skill Match — script.js
-   This file makes the page interactive. It is split into two
-   parts:
+/*
+   
      1. The mobile menu button (used on every page)
-     2. The AI Assistant (only exists on the home page)
-   Read the comments above each block to see what it does.
-   ============================================================ */
+     2. The AI Assistant (only exists on the home page*/ 
 
-/* ---- 1. Mobile menu toggle -----------------------------------
-   On small screens the navigation links are hidden behind a
-   button (the "hamburger" icon). This code shows/hides them
-   when that button is clicked. It runs on every page that has
-   a #navToggle button, and does nothing if that button isn't
-   on the page (so it's safe to include everywhere).
-   --------------------------------------------------------------*/
 const navToggle = document.getElementById('navToggle');
-const siteNav = document.getElementById('siteNav');
+const siteNav = document.getElementById('siteNav');*/
 
 if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {
@@ -31,13 +20,6 @@ if (navToggle && siteNav) {
     });
   });
 }
-
-/* ---- 2. AI Assistant (home page only) ---------------------------
-   The code below only runs if the page actually has the assistant
-   panels on it (the "if (findBtn)" check near the bottom makes
-   sure of that), so this same script.js file is safe to load on
-   the contact page too, where none of these elements exist.
-   --------------------------------------------------------------*/
 
 // A small list of open roles the assistant can suggest from.
 // In a real product this list would come from a database of live
