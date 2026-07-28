@@ -1,12 +1,10 @@
-Skill Match
+SKILL MATCH OVERVIEW
 Skill match is an AI-powered web-based platform designed to bridge the gap between job seekers and employers.
 The platform enables individuals to showcase their skills, discover career opportunities and receive intelligent career guidance while helping employers identify qualified candidates efficiently.
 Through machine learning and intelligent matching algorithms, Skill Match recommends suitable job opportunities, tailors resumes for specific vacancies and improves recruitment outcomes for both employers and job seekers.
 
 PROBLEM STATEMENT
-
 Finding the right job and the right employee remains a challenge.
-
 Many job seekers struggle to:
 1.find jobs matching their skills
 2.create professional resumes
