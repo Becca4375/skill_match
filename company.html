@@ -95,7 +95,9 @@
           <input id="companyName" type="text" placeholder="BrightWave Ltd">
 
           <label for="employerEmail">Work email</label>
-          <input id="employerEmail" type="email" placeholder="hr@brightwave.com">
+          <input id="employerEmail" type="email" placeholder="hr@brightwave.com" required
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+            title="Enter a valid email address, for example hr@brightwave.com">
 
           <label for="employerPassword">Password</label>
           <input id="employerPassword" type="password" placeholder="Create a secure password">
@@ -184,7 +186,9 @@
           <input id="personName" type="text" placeholder="Amina Otieno">
 
           <label for="seekerEmail">Email</label>
-          <input id="seekerEmail" type="email" placeholder="amina@example.com">
+          <input id="seekerEmail" type="email" placeholder="amina@example.com" required
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+            title="Enter a valid email address, for example amina@example.com">
 
           <label for="seekerPassword">Password</label>
           <input id="seekerPassword" type="password" placeholder="Choose a strong password">

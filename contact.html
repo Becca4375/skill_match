@@ -84,7 +84,9 @@
           <input id="nameField" name="name" type="text" placeholder="Jane Doe" required>
 
           <label for="emailField">Your email</label>
-          <input id="emailField" name="email" type="email" placeholder="jane@example.com" required>
+          <input id="emailField" name="email" type="email" placeholder="jane@example.com" required
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+            title="Enter a valid email address, for example jane@example.com">
 
           <label for="messageField">Message</label>
           <textarea id="messageField" name="message" rows="5" placeholder="How can we help?" required></textarea>
@@ -124,10 +126,16 @@
   <script>
     const contactForm = document.getElementById('contactForm');
     const formNote = document.getElementById('formNote');
+    const emailField = document.getElementById('emailField');
 
     if (contactForm && formNote) {
       contactForm.addEventListener('submit', function (event) {
         event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
 
         const name = document.getElementById('nameField').value.trim();
         const email = document.getElementById('emailField').value.trim();
@@ -142,6 +150,18 @@
         formNote.textContent = `Thanks ${name}! Your message has been captured and we'll follow up at ${email}.`;
         formNote.style.color = '#0f766e';
         contactForm.reset();
+      });
+
+      emailField.addEventListener('invalid', function () {
+        if (emailField.validity.valueMissing) {
+          emailField.setCustomValidity('Please enter your email address.');
+        } else {
+          emailField.setCustomValidity('Enter a valid email address, for example jane@example.com.');
+        }
+      });
+
+      emailField.addEventListener('input', function () {
+        emailField.setCustomValidity('');
       });
     }
   </script>

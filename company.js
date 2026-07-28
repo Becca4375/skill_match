@@ -29,6 +29,11 @@ document.querySelectorAll('.portal-card').forEach((card) => {
   });
 
   submitBtn.addEventListener('click', () => {
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     form.style.display = 'none';
     dashboard.classList.add('active');
     submitBtn.style.display = 'none';
