@@ -128,3 +128,28 @@ body.light-theme.mission-page .hero-section {
 body.light-theme.mission-page footer {
   background: #102d59;
 }
+
+/* Keep form controls readable when page styles use dark-mode colors. */
+body.light-theme.company-page .portal-form label {
+  color: var(--text);
+}
+
+body.dark-theme .contact-form {
+  background: var(--surface);
+}
+
+body.dark-theme .contact-form label {
+  color: var(--text);
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+  background: #1a1a1a;
+  color: var(--text);
+}
+
+body.dark-theme .contact-form input::placeholder,
+body.dark-theme .contact-form textarea::placeholder,
+body.dark-theme .form-note {
+  color: var(--text-muted);
+}
