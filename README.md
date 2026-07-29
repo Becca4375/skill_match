@@ -94,3 +94,18 @@ DEVELOPED BY
 
 African Leadership College Of Higher Education
 Software Engineering
+
+IMAGE REFERENCES
+Images used in this project were sourced from Unsplash.
+Source: https://unsplash.com/
+
+Local image assets used as project references:
+- images/a.jpg, images/b.jpg, images/c.jpg
+- images/chang-duong-Sj0iMtq_Z4w-unsplash.jpg
+- images/employers.jpg, images/freedom.jpg, images/handshake.jpg
+- images/image1.jpg, images/image2.jpg, images/image3.jpg, images/image4.jpg, images/image5.jpg
+- images/job search.jpg, images/job seeker.jpg
+- images/markus-winkler-XKKuY4ottJ0-unsplash.jpg
+- images/mish.jpeg, images/youth.jpg
+
+Some mission-page images are also loaded directly from Unsplash URLs in mission.html.
